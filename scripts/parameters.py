@@ -1,0 +1,77 @@
+CAMERA_MODEL = "iPhone_11_Pro"
+# CAMERA_MODEL = "iPhone_11_Pro_tele"
+# CAMERA_MODEL = "Sony_RX100_IV"
+# CAMERA_MODEL = "Sony_A7R_III"
+
+'''
+    set the constants that drive most of the scripts so that it is more reproducible when switching
+    between cameras.
+'''
+
+if CAMERA_MODEL == "iPhone_11_Pro":
+    FILE_EXTENSION = "DNG"
+    BIT_DEPTH = 12
+    ISO_LIST = [32, 50, 100, 200, 400, 800, 1000, 1600, 3200]
+    ISO_LIST_TO_INJECT = [100, 200, 400, 800, 1600, 3200]
+    BASE_ISO = 50
+
+    NO_AUTO_BRIGHT = False
+    NO_AUTO_SCALE = False
+
+    CROP_Y = 1100
+    CROP_X = 1700
+    CROP_HEIGHT = 512
+    CROP_WIDTH = 512
+
+    USE_DARK_CURRENT_DATABASE = True
+
+elif CAMERA_MODEL == "iPhone_11_Pro_tele":
+    FILE_EXTENSION = "DNG"
+    BIT_DEPTH = 12
+    ISO_LIST = [20, 50, 100, 200, 400, 800, 1000, 1600, 2000]
+    ISO_LIST_TO_INJECT = [50, 100, 200, 400, 800, 1600]
+    BASE_ISO = 20
+
+    NO_AUTO_BRIGHT = False
+    NO_AUTO_SCALE = False
+
+    CROP_Y = 700
+    CROP_X = 1500
+    CROP_HEIGHT = 1024
+    CROP_WIDTH = 1024
+
+    USE_DARK_CURRENT_DATABASE = True
+
+elif CAMERA_MODEL == "Sony_RX100_IV":
+    FILE_EXTENSION = "ARW"
+    BIT_DEPTH = 14
+    ISO_LIST = [125, 200, 400, 800, 1600, 3200, 6400, 12800]
+    ISO_LIST_TO_INJECT = [200, 400, 800, 1600, 3200, 6400, 12800]
+    BASE_ISO = 125
+
+    NO_AUTO_BRIGHT = False
+    NO_AUTO_SCALE = False
+
+    CROP_Y = 100
+    CROP_X = 2300
+    CROP_HEIGHT = 512
+    CROP_WIDTH = 512
+
+    USE_DARK_CURRENT_DATABASE = False
+
+elif CAMERA_MODEL == "Sony_A7R_III":
+    FILE_EXTENSION = "ARW"
+    BIT_DEPTH = 14
+    ISO_LIST = [100, 200, 400, 800, 1600, 3200, 6400, 12800]
+    ISO_LIST_TO_INJECT = [200, 400, 800, 1600, 3200, 6400, 12800]
+    BASE_ISO = 100
+
+    NO_AUTO_BRIGHT = False
+    NO_AUTO_SCALE = False
+
+    CROP_Y = 1500
+    CROP_X = 3300
+    CROP_HEIGHT = 512
+    CROP_WIDTH = 512
+
+    USE_DARK_CURRENT_DATABASE = False
