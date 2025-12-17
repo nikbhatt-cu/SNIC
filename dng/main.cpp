@@ -354,7 +354,7 @@ int makeDNG(string rawDataPath, string rawMetadataPath, string outputDirectory)
 			fs::create_directories(outputDirectoryPath);
 		}
 		newFileName.replace_extension(".dng");
-		fs::path outputPath = outputDirectoryPath / newFileName;
+		outputPath = outputDirectoryPath / newFileName;
 	}
 	
 

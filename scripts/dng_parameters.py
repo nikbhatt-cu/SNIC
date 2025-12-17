@@ -1,9 +1,5 @@
 from parameters import CAMERA_MODEL
 
-'''
-    This file is used to write out data for DNGs
-'''
-
 if CAMERA_MODEL == "iPhone_11_Pro":
     DNG_BAYER_PATTERN = 1  # 0=GRBG, 1=RGGB, 2=GBRG, 3=BGGR
     DNG_CAMERA_MAKE = "APPLE"
@@ -46,7 +42,7 @@ elif CAMERA_MODEL == "iPhone_11_Pro_tele":
 
     DNG_ACTIVE_AREA = [0, 0, 3024, 4032]    # top, left, bottom, right
     DNG_CROP_ORIGIN = [0, 0]  # X, Y
-    DNG_CROP_SIZE = [3024, 4032]  # Width, Height
+    DNG_CROP_SIZE = [4032, 3024]  # Width, Height
     DNG_BOUNDS = DNG_ACTIVE_AREA
     DNG_BASELINE_EXPOSURE = 0.0
 
